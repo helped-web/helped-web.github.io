@@ -1,0 +1,61 @@
+1:"$Sreact.fragment"
+2:I[47257,["/_next/static/chunks/1g1ir0r9-495r.js"],"ClientPageRoot"]
+3:I[36768,["/_next/static/chunks/1g1ir0r9-495r.js","/_next/static/chunks/0udbldtbejk42.js","/_next/static/chunks/1lg5t3-dun_23.js"],"default"]
+6:I[97367,["/_next/static/chunks/1g1ir0r9-495r.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+b:I[97367,["/_next/static/chunks/1g1ir0r9-495r.js"],"ViewportBoundary"]
+c:I[97367,["/_next/static/chunks/1g1ir0r9-495r.js"],"MetadataBoundary"]
+d:I[27201,["/_next/static/chunks/1g1ir0r9-495r.js"],"IconMark"]
+f:I[39756,["/_next/static/chunks/1g1ir0r9-495r.js"],"default"]
+10:I[37457,["/_next/static/chunks/1g1ir0r9-495r.js"],"default"]
+:HL["/_next/static/chunks/2m_l79dg2-t14.css","style"]
+a:X
+12:X
+12:C
+13:T488,
+(function () {
+  document.addEventListener("click", function (event) {
+    var target = event.target;
+    if (!target || !target.closest) return;
+    var link = target.closest("a[data-save-status]");
+    if (!link) return;
+    var slug = link.getAttribute("data-save-slug");
+    var status = link.getAttribute("data-save-status");
+    if (!slug || (status !== "pass" && status !== "fail" && status !== "skip")) return;
+    var detail = link.getAttribute("data-save-detail") || "";
+    try {
+      var key = "proverka-posle-remonta-v1";
+      var data = {};
+      try { data = JSON.parse(localStorage.getItem(key) || "{}") || {}; } catch (err) { data = {}; }
+      var item = { status: status, at: new Date().toISOString() };
+      if (detail) item.detail = detail;
+      data[slug] = item;
+      localStorage.setItem(key, JSON.stringify(data));
+    } catch (err) {
+      var box = document.getElementById("save-error");
+      if (box) {
+        box.hidden = false;
+        box.textContent = "Не удалось сохранить результат на этом телефоне. Нажмите кнопку ещё раз.";
+      }
+    }
+  }, true);
+})();
+0:{"buildId":"_146FJ1pwhzxSOV0BGF9l","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/0udbldtbejk42.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/1lg5t3-dun_23.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":"$@9","staleTime":"$a","varyParams":null},{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$Lb",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#f7f8fa"}]]}],["$","div",null,{"hidden":true,"children":["$","$Lc",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Проверка после ремонта"}],["$","meta","1",{"name":"description","content":"Проверка функций iPhone после ремонта: экран, сенсор, камеры, звук, датчики и кнопки."}],["$","meta","2",{"name":"application-name","content":"Проверка после ремонта"}],["$","link","3",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","4",{"name":"apple-mobile-web-app-capable","content":"yes"}],["$","meta","5",{"name":"format-detection","content":"telephone=no"}],["$","meta","6",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","7",{"name":"apple-mobile-web-app-title","content":"Проверка"}],["$","meta","8",{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"}],["$","link","9",{"rel":"icon","href":"/icon-192.png","sizes":"192x192","type":"image/png"}],["$","link","10",{"rel":"icon","href":"/icon-512.png","sizes":"512x512","type":"image/png"}],["$","link","11",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}],["$","$Ld","12",{}]]}]}]}],null]}],"isPartial":"$@e","staleTime":"$a","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Lf",null,{"parallelRouterKey":"children","template":["$","$L10",null,{}]}]]}],"isPartial":"$@11","staleTime":"$a","varyParams":"$12"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2m_l79dg2-t14.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/1g1ir0r9-495r.js","async":true}]],["$","html",null,{"lang":"ru","className":"h-full antialiased","children":[["$","head",null,{"children":[["$","style",null,{"children":"html,body{background:#f4f7fb;color:#122033;font-family:sans-serif}"}],["$","meta",null,{"name":"apple-mobile-web-app-capable","content":"yes"}],["$","meta",null,{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"}],["$","meta",null,{"name":"apple-mobile-web-app-title","content":"Проверка"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$13"}}]]}],["$","body",null,{"className":"min-h-dvh","style":{"background":"#f4f7fb","color":"#122033","fontFamily":"sans-serif"},"children":[["$","section",null,{"className":"px-4 pt-[max(0.75rem,env(safe-area-inset-top))] pb-1 text-base","children":"$L14"}],"$L15","$L16","$L17"]}]]}]]}],"isPartial":"$@18","staleTime":"$a","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@19","rootVaryParams":null,"needsRuntimeRequest":"$@1a"}
+1c:I[96435,["/_next/static/chunks/1g1ir0r9-495r.js"],"ResultsProvider"]
+1d:I[8821,["/_next/static/chunks/1g1ir0r9-495r.js","/_next/static/chunks/1fgnfindwiqtq.js","/_next/static/chunks/1lg5t3-dun_23.js"],"default"]
+4:{}
+5:"$0:data:0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null
+14:["$","p",null,{"children":"Поделиться → На экран «Домой» → Добавить"}]
+15:["$","p",null,{"id":"save-error","hidden":true,"className":"fixed inset-x-4 top-[max(0.75rem,env(safe-area-inset-top))] z-[90] rounded-xl bg-destructive px-4 py-3 text-base text-white"}]
+1b:["$","p",null,{"className":"px-4 py-3 text-base","children":"Safari заблокировал скрипты. Без них камера и кнопки оценки не заработают. Разрешите JavaScript и обновите страницу."}]
+16:["$","noscript",null,{"children":"$1b"}]
+17:["$","$L1c",null,{"children":["$","div",null,{"className":"min-h-dvh","children":["$","$Lf",null,{"parallelRouterKey":"children","error":"$1d","errorStyles":[],"errorScripts":[["$","script","script-0",{"src":"/_next/static/chunks/1fgnfindwiqtq.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/1lg5t3-dun_23.js","async":true}]],"template":["$","$L10",null,{}],"notFound":[["$","$L3",null,{}],[]]}]}]}]
+a:300
+1a:true
+a:C
+19:0
+e:"$undefined"
+11:"$undefined"
+18:"$undefined"
+9:"$undefined"
